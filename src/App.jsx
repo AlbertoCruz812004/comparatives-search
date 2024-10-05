@@ -3,6 +3,7 @@ import Search from "./components/Search";
 import Sun from "./icon/Sun";
 import Moon from "./icon/Moon";
 import useDarkTheme from "./useDarkTheme";
+import logo from './../public/logo.png'
 
 export default function App() {
 
@@ -11,7 +12,7 @@ export default function App() {
   return (
     <>
       <header className="py-5 px-6 flex justify-between">
-        <span className="flex gap-2 w-auto items-center"><img className="w-11 p-1 bg-slate-700 rounded-full" src="./../public/logo.png" alt="" /> CompariSearch</span>
+        <span className="flex gap-2 w-auto items-center"><img className="w-11 p-1 bg-slate-700 rounded-full" src={logo} alt="" /> CompariSearch</span>
         <Button onClick={changeTheme} className="p-2" isIconOnly size="sm">
           {
             toogle ? <Moon className="w-10 h-10" /> : <Sun className="w-10 h-10" />
